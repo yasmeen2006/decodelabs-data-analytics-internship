@@ -1,14 +1,15 @@
 # DecodeLabs Data Analytics Internship — Batch 2026
 
-**Intern:** Yasmeen Firdous
+**Intern:** Yasmeen
 **Duration:** July 5 – August 5, 2026 (Remote)
 **Track:** Data Analytics
 
-This repo documents my Week 1–3 project submissions for the DecodeLabs
+This repo documents my Week 1–4 project submissions for the DecodeLabs
 Data Analytics Internship: cleaning a raw e-commerce dataset, exploring it
-for patterns and trends, and querying it with SQL. Each project builds on
-the one before it — same dataset throughout, so the whole thing reads as
-one connected analysis rather than three separate exercises.
+for patterns and trends, querying it with SQL, and turning the findings
+into boardroom-ready visuals. Each project builds on the one before it —
+same dataset throughout, so the whole thing reads as one connected
+analysis rather than four separate exercises.
 
 ## Projects
 
@@ -38,12 +39,24 @@ contribution by product, and a monthly revenue trend.
 
 **Tools:** SQL (SQLite) + Python (for running/exporting query results)
 
-## Key takeaway across all three projects
+### [Project 4 — Data Visualization](./Project4_Visualization)
+Optional mastery phase — took the 41.4% cancel/return finding from
+Project 2 and turned it into a 4-slide boardroom-ready deck, built on the
+Situation-Complication-Resolution framework. Applied the deck's design
+rules directly: zero-baseline axes, direct labeling instead of legends,
+action titles that state the conclusion, and no pie charts (5-category
+data violates the "max 3 slices" readability rule, so a sorted horizontal
+bar was used instead).
+
+**Tools:** Python (matplotlib) for charts, PowerPoint (pptxgenjs) for the deck
+
+## Key takeaway across all four projects
 The dataset's biggest issue isn't in the data quality — it's in the
 business outcome. Nearly 4 in 10 orders don't complete successfully
-(Cancelled + Returned). That single thread ties Projects 1–3 together:
-clean the data, find the pattern, then query it to confirm exactly where
-the losses are concentrated.
+(Cancelled + Returned). That single thread ties all four projects
+together: clean the data, find the pattern, query it to confirm exactly
+where the losses are concentrated, then package the finding so a
+decision-maker can act on it in five seconds.
 
 ## Repo structure
 ```
@@ -51,7 +64,8 @@ decodelabs-data-analytics-internship/
 ├── README.md                       ← you are here
 ├── Project1_Data_Cleaning/
 ├── Project2_EDA/
-└── Project3_SQL/
+├── Project3_SQL/
+└── Project4_Visualization/
 ```
 
 Each project folder has its own README with setup instructions and a
